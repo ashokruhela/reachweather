@@ -2,18 +2,32 @@ var React = require('react');
 var {Link, IndexLink} = require('react-router');
 
 var Menu = React.createClass({
+    onSearch: (e) => {
+        alert('not yet wired up');
+    },
     render: function () {
         return (
-            <div>
-                <h2>Hello nav</h2>
-                <ul>
-                    <li><IndexLink to="/" activeClassName="active" activeStyle={{fontWeight:"Bold"}}>Get Wheather</IndexLink></li>
-                    <li><Link to="/about" activeClassName="active" activeStyle={{fontWeight:"Bold"}}>About</Link></li>
-                    <li><Link to="/examples" activeClassName="active" activeStyle={{fontWeight:"Bold"}}>Get Examples</Link></li>
-                </ul>
-                
-                
-                
+            <div className="top-bar">
+                <div className="top-bar-left">
+                    <ul className="menu">
+                        <li className="menu-text">React weather app</li>
+                        <li><IndexLink to="/" activeClassName="active" activeStyle={{fontWeight:"Bold"}}>Get Wheather</IndexLink></li>
+                        <li><Link to="/about" activeClassName="active" activeStyle={{fontWeight:"Bold"}}>About</Link></li>
+                        <li><Link to="/examples" activeClassName="active" activeStyle={{fontWeight:"Bold"}}>Get Examples</Link></li>
+                    </ul>
+                </div>
+                <div className="top-bar-right">
+                    <form onSubmit="{this.onSearch}">
+                        <ul className="menu">
+                            <li>
+                                <input type="text" placeholder="Enter your search"/>
+                            </li>
+                            <li>
+                                <input type="submit" className="button" value="Get Weather"/>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
             </div>
             
         );
@@ -21,3 +35,4 @@ var Menu = React.createClass({
 });
 
 module.exports = Menu;
+
