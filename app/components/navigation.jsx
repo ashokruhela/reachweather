@@ -11,9 +11,9 @@ var Menu = React.createClass({
                 <div className="top-bar-left">
                     <ul className="menu">
                         <li className="menu-text">React weather app</li>
-                        <li><IndexLink to="/" activeClassName="active" activeStyle={{fontWeight:"Bold"}}>Get Wheather</IndexLink></li>
-                        <li><Link to="/about" activeClassName="active" activeStyle={{fontWeight:"Bold"}}>About</Link></li>
-                        <li><Link to="/examples" activeClassName="active" activeStyle={{fontWeight:"Bold"}}>Get Examples</Link></li>
+                        <li><IndexLink to="/" activeClassName="active" >Get Wheather</IndexLink></li>
+                        <li><Link to="/about" activeClassName="active" >About</Link></li>
+                        <li><Link to="/examples" activeClassName="active" >Get Examples</Link></li>
                     </ul>
                 </div>
                 <div className="top-bar-right">

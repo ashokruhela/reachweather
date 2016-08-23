@@ -4,10 +4,15 @@ var Menu = require('Menu');
 var Main = React.createClass({
     render: function (){
         return (
-            <div>
-                <Menu></Menu>
-                <h1>Main component</h1>
-                {this.props.children}
+            <div className="row">
+                <Menu/>
+                <div className="row">
+                    <div className="columns medium-6 large-4 small-centered">
+                        {this.props.children}
+                    </div>
+                </div>
+                
+                
             </div>
         );
     }
