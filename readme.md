@@ -14,4 +14,4 @@ A sample application to weather for a city.
   * In the browser address bar type http://localhost:3000 and hit Enter
   
 note - Error handling is not yet done in this project. It was just to practice reactJS
-=====================================================================================
+--------------------------------------------------------------------------------------
