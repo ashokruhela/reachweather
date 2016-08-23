@@ -12,3 +12,5 @@ A sample application to weather for a city.
   * Go inside the directory
   * Run npm install
   * In the browser address bar type http://localhost:3000 and hit Enter
+  
+It is not yet error handled
