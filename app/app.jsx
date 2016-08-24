@@ -21,3 +21,5 @@ ReactDOM.render(
         </Route>
    </Router>
 , document.getElementById('app'));
+
+//now the latest es6 feature are great. Use import instead of require.
